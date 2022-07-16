@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+}
+.h1_style{
+  left: 0;
+  line-height: 200px;
+  margin-top: -200px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+h1{
+  color:#E1AD01;
+  font-family: fantasy;
+  font-size: 150px;
+}
+.search{
+  left: 0;
+  line-height: 200px;
+  margin-top: 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.search_input{
+  padding: 10px;
+  width: 30%;
+}
+.btn{
+  padding: 10px;
+}

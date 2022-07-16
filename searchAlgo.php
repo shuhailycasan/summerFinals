@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form action="SearchAlgo.php" method="post">
-    <input type="text" name="search_query"/>
-    <input type="submit" name="search">
-</form>
+<link rel="stylesheet" href="style.css">
+<div class ="h1_style">
+  <h1>WORLD OF GAMES</h1>
+</div>
+<div class = "search">
+  <form action="SearchAlgo.php" method="post">
+    <input type="text" name="search_query" class="search_input" placeholder="Search">
+    <input type="submit" name="search" class="btn">
+  </form>
+</div>
+
 </body>
 <?php
 
