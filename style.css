@@ -31,3 +31,12 @@ h1{
 .btn{
   padding: 10px;
 }
+.link{
+  left: 0;
+  line-height: 200px;
+  margin-top: 150px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}

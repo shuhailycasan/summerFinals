@@ -44,7 +44,7 @@
                    ?>
                    <h2><?=$row['title']?></h2>
                    <h3><?=$row['lyrics'] ?></h3>
-                   <a href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
+                   <a class="link"href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
                    <?php
               }
           }
@@ -70,7 +70,7 @@
                          ?>
                          <h2><?=$row['title']?></h2>
                          <h3><?=$row['lyrics'] ?></h3>
-                         <a href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
+                         <a class="link"href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
                          <?php
                     }
                   }
