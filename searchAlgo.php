@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
 <div class ="h1_style">
   <h1>WORLD OF GAMES</h1>
 </div>
