@@ -30,7 +30,7 @@
                $search_string.=metaphone($word)." ";
           }
           echo $search_string."<br>";
-          $sql="SELECT * FROM tb_lyrics WHERE indexing like '%$search_string%'";
+          $sql="SELECT * FROM games WHERE indexing like '%$search_string%'";
           $res=mysqli_query($conn,$sql);
           if(!$res)
           {
@@ -44,7 +44,8 @@
                    ?>
                    <h2><?=$row['title']?></h2>
                    <h3><?=$row['lyrics'] ?></h3>
-                   <a class="link"href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
+                   <a target="_blank" class="link" href="<?=$row['url'] ?>"><?=$row['url'] ?>
+                   </a>
                    <?php
               }
           }
@@ -56,7 +57,7 @@
               foreach ($words as $word)
               {
                   $mword=metaphone($word);
-                  $sql="SELECT * FROM tb_lyrics WHERE indexing like '%$mword%'";
+                  $sql="SELECT * FROM games WHERE indexing like '%$mword%'";
                   $res=mysqli_query($conn,$sql);
                   if(!$res)
                   {
@@ -70,7 +71,8 @@
                          ?>
                          <h2><?=$row['title']?></h2>
                          <h3><?=$row['lyrics'] ?></h3>
-                         <a class="link"href="<?=$row['url'] ?>"><?=$row['url'] ?></a>
+                         <a target="_blank"  class="link" href="<?=$row['url'] ?>"><?=$row['url'] ?>
+                         </a>
                          <?php
                     }
                   }

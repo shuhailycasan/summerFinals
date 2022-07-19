@@ -1,6 +1,6 @@
 <?php
      include('config.php');
-     $sql1="SELECT * FROM tb_lyrics";
+     $sql1="SELECT * FROM games";
      $res1=mysqli_query($conn,$sql1);
      if(!$res1)
      {
@@ -28,7 +28,7 @@
              }
          }
          $id=$row['id'];
-         $sql2="UPDATE tb_lyrics SET indexing='$sound' WHERE id=$id";
+         $sql2="UPDATE games SET indexing='$sound' WHERE id=$id";
          $res2=mysqli_query($conn,$sql2);
          if(!$res2)
          {
